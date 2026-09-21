@@ -56,13 +56,12 @@ AI helped me understand how pytest checks the output of individual functions. Cl
 
 ## 4. What did you learn about Streamlit and state?
 
-- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+Streamlit reruns the entire script from top to bottom whenever a user interacts with the app. Session state saves important values, such as the secret number, attempts, score, and input, so they are not lost during each rerun.
 
 ---
 
 ## 5. Looking ahead: your developer habits
 
-- What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
-- What is one thing you would do differently next time you work with AI on a coding task?
-- In one or two sentences, describe how this project changed the way you think about AI generated code.
+- One habit I want to reuse is testing each feature manually and with pytest after making changes.
+- Next time, I would keep each AI chat focused on one bug from the beginning. This would make the suggestions easier to follow and reduce the chance of unrelated changes being included.
+- This project taught me that AI-generated code can be helpful, but it can also introduce new bugs. I should always understand, review, and test the code instead of assuming every suggestion is correct.
