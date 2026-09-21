@@ -25,28 +25,27 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- **Game purpose:** Glitchy Guesser is a numeric guessing game where users follow hints to find a secret number within a limited number of attempts. 
+- **Bugs found:** I found incorrect higher and lower hints, invalid guesses affecting the game, an inaccurate attempt counter, and the previous guess remaining after starting a new game. 
+- **Fixes applied:** I corrected the hint logic, improved input validation and attempt tracking, moved the core game logic into `logic_utils.py`, fixed the New Game reset behavior, and added a regression test to verify the hints.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. The user selects Easy, Normal, or Hard difficulty to set the number range and attempt limit.
+2. The user enters a number within the displayed range and clicks “Submit Guess.”
+3. The game responds with “Go HIGHER!” or “Go LOWER!” and updates the attempts and score.
+4. The user follows the hints and continues guessing until they find the correct number or run out of attempts.
+5. After the game ends, the user can click “New Game” to generate a new secret number, reset the score and attempts, and clear the previous guess.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+# pytest tests/ -v
+# ============================= 4 passed in 0.03s =============================
 ```
 
 ## 🚀 Stretch Features
